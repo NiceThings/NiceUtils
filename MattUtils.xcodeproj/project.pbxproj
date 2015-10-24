@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B536E0E91BD9D3A30096C3E7 /* UIImage+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */; settings = {ASSET_TAGS = (); }; };
 		B57B6B251BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */; settings = {ASSET_TAGS = (); }; };
 		B5EDEEF61BCB00B200FACF9F /* MattUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EDEEF51BCB00B200FACF9F /* MattUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5EDEEFD1BCB00B200FACF9F /* MattUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */; settings = {ASSET_TAGS = (); }; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blend.swift"; sourceTree = "<group>"; };
 		B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Screenshot.swift"; sourceTree = "<group>"; };
 		B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MattUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EDEEF51BCB00B200FACF9F /* MattUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MattUtils.h; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */,
+				B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57B6B251BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift in Sources */,
+				B536E0E91BD9D3A30096C3E7 /* UIImage+Blend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
