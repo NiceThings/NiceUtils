@@ -23,6 +23,7 @@ extension UIWindow {
                 CGContextSaveGState(context)
                 CGContextTranslateCTM(context, window.center.x, window.center.y)
                 CGContextConcatCTM(context, window.transform)
+                CGContextTranslateCTM(context, -window.bounds.size.width * window.layer.anchorPoint.x, -window.bounds.size.height * window.layer.anchorPoint.y)
 
                 let pi_2: CGFloat = CGFloat(M_PI_2)
                 let pi: CGFloat = CGFloat(M_PI)
