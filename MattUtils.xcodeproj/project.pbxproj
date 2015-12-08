@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B536E0E91BD9D3A30096C3E7 /* UIImage+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */; settings = {ASSET_TAGS = (); }; };
-		B539F27A1BDC355F003C2E20 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539F2791BDC355F003C2E20 /* HairlineView.swift */; settings = {ASSET_TAGS = (); }; };
-		B57B6B251BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */; settings = {ASSET_TAGS = (); }; };
+		B53111B11C15C83D00E0CACD /* SplitTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53111B01C15C83D00E0CACD /* SplitTransitionController.swift */; };
+		B536E0E91BD9D3A30096C3E7 /* UIImage+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */; };
+		B539F27A1BDC355F003C2E20 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539F2791BDC355F003C2E20 /* HairlineView.swift */; };
+		B57B6B251BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */; };
 		B5EDEEF61BCB00B200FACF9F /* MattUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EDEEF51BCB00B200FACF9F /* MattUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5EDEEFD1BCB00B200FACF9F /* MattUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */; settings = {ASSET_TAGS = (); }; };
+		B5EDEEFD1BCB00B200FACF9F /* MattUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */; };
 		B5EDEF021BCB00B200FACF9F /* MattUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDEF011BCB00B200FACF9F /* MattUtilsTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B53111B01C15C83D00E0CACD /* SplitTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitTransitionController.swift; sourceTree = "<group>"; };
 		B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blend.swift"; sourceTree = "<group>"; };
 		B539F2791BDC355F003C2E20 /* HairlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
 		B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Screenshot.swift"; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B539F2791BDC355F003C2E20 /* HairlineView.swift */,
+				B53111B01C15C83D00E0CACD /* SplitTransitionController.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57B6B251BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift in Sources */,
+				B53111B11C15C83D00E0CACD /* SplitTransitionController.swift in Sources */,
 				B536E0E91BD9D3A30096C3E7 /* UIImage+Blend.swift in Sources */,
 				B539F27A1BDC355F003C2E20 /* HairlineView.swift in Sources */,
 			);
