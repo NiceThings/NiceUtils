@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-enum TransitionType {
+public enum TransitionType {
     case Push
     case Pop
 }
 
-class SplitTransitionController: NSObject {
+public class SplitTransitionController: NSObject {
     /**
      * The duration (in seconds) of the transition.
      */
@@ -68,11 +68,11 @@ class SplitTransitionController: NSObject {
 
 extension SplitTransitionController: UIViewControllerAnimatedTransitioning {
 
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return transitionDuration
     }
 
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
 
         // Take screenshot and store resulting UIImage
         screenCapture = UIWindow.screenShot()

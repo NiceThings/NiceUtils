@@ -10,7 +10,7 @@ import Foundation
 
 extension UIWindow {
 
-    class func screenShot() -> UIImage {
+    public class func screenShot() -> UIImage {
 
         let orientation: UIInterfaceOrientation = UIApplication.sharedApplication().statusBarOrientation
         let imageSize: CGSize = UIInterfaceOrientationIsPortrait(orientation) ? UIScreen.mainScreen().bounds.size : CGSizeMake(UIScreen.mainScreen().bounds.size.height, UIScreen.mainScreen().bounds.size.width)
