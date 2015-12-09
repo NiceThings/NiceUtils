@@ -18,19 +18,19 @@ public class SplitTransitionController: NSObject {
     /**
      * The duration (in seconds) of the transition.
      */
-    var transitionDuration: NSTimeInterval = 1.0
+    public var transitionDuration: NSTimeInterval = 1.0
 
     /**
      * The delay before/afte the transition (in seconds).
      */
-    var transitionDelay: NSTimeInterval = 0.0
+    public var transitionDelay: NSTimeInterval = 0.0
 
     /**
      * Stores animation type (e.g. push/pop). Defaults to "push".
      */
-    var transitionType: TransitionType = .Push
+    public var transitionType: TransitionType = .Push
 
-    var splitLocation: CGPoint = CGPointZero
+    public var splitLocation: CGPoint = CGPointZero
     
     /** 
      * Screen capture extending from split location
