@@ -21,7 +21,7 @@ public class SplitTransitionController: NSObject {
     public var transitionDuration: NSTimeInterval = 1.0
 
     /**
-     * The delay before/afte the transition (in seconds).
+     * The delay before/after the transition (in seconds).
      */
     public var transitionDelay: NSTimeInterval = 0.0
 
@@ -30,7 +30,11 @@ public class SplitTransitionController: NSObject {
      */
     public var transitionType: TransitionType = .Push
 
-    public var splitLocation: CGPoint = CGPointZero
+    /**
+     * Y coordinate where top and bottom screen captures
+     * should split
+     */
+    public var splitLocation: CGFloat = 0.0
 
     /**
      * Screen capture extending from split location
@@ -56,6 +60,9 @@ public class SplitTransitionController: NSObject {
         return imageView
     }()
 
+    /**
+     *  Optional capture of entire screen
+     */
     var screenCapture: UIImage?
 
     convenience init(transitionDuration: NSTimeInterval, transitionType: TransitionType) {
@@ -77,7 +84,8 @@ extension SplitTransitionController: UIViewControllerAnimatedTransitioning {
         // Take screenshot and store resulting UIImage
         screenCapture = UIWindow.screenShot()
 
-        // ???
+        // Grab the view in which the transition should take place.
+        // Coalesce to UIView()
         let container = containerView(transitionContext) ?? UIView()
 
         // Set source and destination view controllers
@@ -123,6 +131,8 @@ private extension SplitTransitionController {
         fromViewController: UIViewController,
         containerView: UIView,
         completion: (() -> ())?) {
+
+            // Add subviews
             containerView.addSubview(toViewController.view)
             containerView.addSubview(topSplitImageView)
             containerView.addSubview(bottomSplitImageView)
@@ -130,7 +140,7 @@ private extension SplitTransitionController {
             // Set initial frames for screen captures
             setInitialScreenCaptureFrames(containerView)
 
-            // fromVC is initially hidden
+            // source view controller is initially hidden
             fromViewController.view.alpha = 0.0
             toViewController.view.alpha = 1.0
             toViewController.view.transform = CGAffineTransformMakeTranslation(0.0, topSplitImageView.frame.size.height)
@@ -162,12 +172,14 @@ private extension SplitTransitionController {
         fromViewController: UIViewController,
         containerView: UIView,
         completion: (() -> ())?) {
+
+            // Add subviews
             containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
             containerView.addSubview(toViewController.view)
             containerView.addSubview(topSplitImageView)
             containerView.addSubview(bottomSplitImageView)
 
-            // toVC is initially hidden
+            // Destination view controller is initially hidden
             toViewController.view.alpha = 0.0
 
             // Set initial transforms for top and bottom split views
@@ -193,7 +205,7 @@ private extension SplitTransitionController {
                         controller.bottomSplitImageView.removeFromSuperview()
                     }
 
-                    // Make toVC's view visible again
+                    // Make destination view controller's view visible again
                     toViewController.view.alpha = 1.0
 
                     // If a completion was passed as a parameter,
@@ -209,9 +221,12 @@ private extension SplitTransitionController {
         // Set bounds for top and bottom screen captures
         let width = containerView.frame.size.width ?? 0.0
         let height = containerView.frame.size.height ?? 0.0
-        
-        topSplitImageView.frame = CGRectMake(0.0, 0.0, width, height - splitLocation.y)
-        bottomSplitImageView.frame = CGRectMake(0.0, splitLocation.y, width, height - splitLocation.y)
+
+        // Top screen capture extends from split location to top of view
+        topSplitImageView.frame = CGRectMake(0.0, 0.0, width, height - splitLocation)
+
+        // Bottom screen capture extends from split location to bottom of view
+        bottomSplitImageView.frame = CGRectMake(0.0, splitLocation, width, height - splitLocation)
     }
     
 }
