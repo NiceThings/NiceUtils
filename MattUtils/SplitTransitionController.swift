@@ -31,8 +31,8 @@ public class SplitTransitionController: NSObject {
     public var transitionType: TransitionType = .Push
 
     public var splitLocation: CGPoint = CGPointZero
-    
-    /** 
+
+    /**
      * Screen capture extending from split location
      * to top of screen
      */
@@ -80,27 +80,20 @@ extension SplitTransitionController: UIViewControllerAnimatedTransitioning {
         // ???
         let container = containerView(transitionContext) ?? UIView()
 
-        // Set bounds for top and bottom screen captures
-        let width = container.frame.size.width ?? 0.0
-        let height = container.frame.size.height ?? 0.0
-
-        topSplitImageView.frame = CGRectMake(0.0, 0.0, width, height - splitLocation.y)
-        bottomSplitImageView.frame = CGRectMake(0.0, splitLocation.y, width, height - splitLocation.y)
-
         // Set source and destination view controllers
         let fromVC = fromViewController(transitionContext) ?? UIViewController()
         let toVC = toViewController(transitionContext) ?? UIViewController()
 
         // Set completion handler for transition
         let completion = {transitionContext.completeTransition(!transitionContext.transitionWasCancelled())}
-        
+
         switch(transitionType) {
-            case .Push:
-                push(toVC, fromViewController: fromVC, containerView: container, completion: completion)
-                break
-            case .Pop:
-                pop(toVC, fromViewController: fromVC, containerView: container, completion: completion)
-                break
+        case .Push:
+            push(toVC, fromViewController: fromVC, containerView: container, completion: completion)
+            break
+        case .Pop:
+            pop(toVC, fromViewController: fromVC, containerView: container, completion: completion)
+            break
         }
     }
 
@@ -134,6 +127,9 @@ private extension SplitTransitionController {
             containerView.addSubview(topSplitImageView)
             containerView.addSubview(bottomSplitImageView)
 
+            // Set initial frames for screen captures
+            setInitialScreenCaptureFrames(containerView)
+
             // fromVC is initially hidden
             fromViewController.view.alpha = 0.0
             toViewController.view.alpha = 1.0
@@ -146,7 +142,7 @@ private extension SplitTransitionController {
                     toViewController.view.transform = CGAffineTransformIdentity
                 }
                 }) { [weak self] (Bool) -> Void in
-                    // When the transition is fished, top and bottom
+                    // When the transition is finished, top and bottom
                     // split views are removed from the view hierarchy
                     if let controller = self {
                         controller.topSplitImageView.removeFromSuperview()
@@ -166,13 +162,17 @@ private extension SplitTransitionController {
         fromViewController: UIViewController,
         containerView: UIView,
         completion: (() -> ())?) {
+            containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
             containerView.addSubview(toViewController.view)
             containerView.addSubview(topSplitImageView)
             containerView.addSubview(bottomSplitImageView)
 
             // toVC is initially hidden
             toViewController.view.alpha = 0.0
-            toViewController.view.transform = CGAffineTransformMakeTranslation(0.0, topSplitImageView.frame.size.height)
+
+            // Set initial transforms for top and bottom split views
+            topSplitImageView.transform = CGAffineTransformMakeTranslation(0.0, -topSplitImageView.bounds.size.height)
+            bottomSplitImageView.transform = CGAffineTransformMakeTranslation(0.0, bottomSplitImageView.bounds.size.height)
 
             UIView.animateWithDuration(transitionDuration, delay: 0.0, usingSpringWithDamping: 0.65, initialSpringVelocity: 1.0, options: .LayoutSubviews, animations: { [weak self] () -> Void in
                 if let controller = self {
@@ -186,7 +186,7 @@ private extension SplitTransitionController {
                     fromViewController.view.transform = CGAffineTransformMakeTranslation(0.0, controller.topSplitImageView.bounds.size.height)
                 }
                 }) { [weak self] (Bool) -> Void in
-                    // When the transition is fished, top and bottom
+                    // When the transition is finished, top and bottom
                     // split views are removed from the view hierarchy
                     if let controller = self {
                         controller.topSplitImageView.removeFromSuperview()
@@ -204,4 +204,14 @@ private extension SplitTransitionController {
             }
     }
 
+    func setInitialScreenCaptureFrames(containerView: UIView) {
+
+        // Set bounds for top and bottom screen captures
+        let width = containerView.frame.size.width ?? 0.0
+        let height = containerView.frame.size.height ?? 0.0
+        
+        topSplitImageView.frame = CGRectMake(0.0, 0.0, width, height - splitLocation.y)
+        bottomSplitImageView.frame = CGRectMake(0.0, splitLocation.y, width, height - splitLocation.y)
+    }
+    
 }
