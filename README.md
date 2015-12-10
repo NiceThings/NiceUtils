@@ -26,7 +26,7 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate Drafter into your Xcode project using Carthage, specify it in your Cartfile:
+To integrate MattUtils into your Xcode project using Carthage, specify it in your Cartfile:
 
 `github "mattthousand/MattUtils"`
 
