@@ -6,7 +6,6 @@
 //  Copyright © 2015 Matt Buckley. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public enum TransitionType {
