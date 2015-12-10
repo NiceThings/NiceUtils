@@ -222,7 +222,7 @@ private extension SplitTransitionController {
         let height = containerView.frame.size.height ?? 0.0
 
         // Top screen capture extends from split location to top of view
-        topSplitImageView.frame = CGRectMake(0.0, 0.0, width, height - splitLocation)
+        topSplitImageView.frame = CGRectMake(0.0, 0.0, width, splitLocation)
 
         // Bottom screen capture extends from split location to bottom of view
         bottomSplitImageView.frame = CGRectMake(0.0, splitLocation, width, height - splitLocation)
