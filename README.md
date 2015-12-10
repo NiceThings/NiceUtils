@@ -8,12 +8,11 @@ My favorite tools
 
 ### Transitions
 
-![alt tag](https://raw.github.com/mattthousand/mattutils/master/SplitTransition.gif)
-
-## Installation with CocoaPods
-
-... Coming soon.
-
+<p align="center" >
+<br/>
+<img src="https://raw.github.com/mattthousand/mattutils/master/SplitTransition.gif" alt="Overview" />
+<br/>
+</p>
 
 ## Installation with Carthage
 
@@ -29,6 +28,10 @@ $ brew install carthage
 To integrate MattUtils into your Xcode project using Carthage, specify it in your Cartfile:
 
 `github "mattthousand/MattUtils"`
+
+## Installation with CocoaPods
+
+... Coming soon.
 
 ## Usage
 
