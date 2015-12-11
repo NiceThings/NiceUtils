@@ -1,5 +1,5 @@
 //
-//  SplitTransitionController.swift
+//  SplitTransition.swift
 //  MattUtils
 //
 //  Created by Matthew Buckley on 12/7/15.
@@ -13,7 +13,7 @@ public enum TransitionType {
     case Pop
 }
 
-public class SplitTransitionController: NSObject {
+public class SplitTransition: NSObject {
     /**
      * The duration (in seconds) of the transition.
      */
@@ -72,7 +72,7 @@ public class SplitTransitionController: NSObject {
 
 }
 
-extension SplitTransitionController: UIViewControllerAnimatedTransitioning {
+extension SplitTransition: UIViewControllerAnimatedTransitioning {
 
     public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return transitionDuration
@@ -106,7 +106,7 @@ extension SplitTransitionController: UIViewControllerAnimatedTransitioning {
 
 }
 
-private extension SplitTransitionController {
+private extension SplitTransition {
 
     // MARK: private interface
 
