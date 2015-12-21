@@ -69,6 +69,7 @@ extension ViewController: UINavigationControllerDelegate {
 
         if (operation == .Push && fromVC == self) {
             let splitTransition = SplitTransition()
+            splitTransition.interactive = true
             splitTransition.transitionDuration = 2.0
             splitTransition.transitionType = .Push
             splitTransition.splitLocation = currentCell != nil ? CGRectGetMidY(currentCell!.frame) : CGRectGetMidY(view.frame)
@@ -80,5 +81,5 @@ extension ViewController: UINavigationControllerDelegate {
         
         return currentTransition
     }
-    
+
 }
