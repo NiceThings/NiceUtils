@@ -1,6 +1,6 @@
 //
 //  UIWindow+Screenshot.swift
-//  MattUtils
+//  NiceUtils
 //
 //  Created by Matthew Buckley on 10/21/15.
 //  Copyright © 2015 Matt Buckley. All rights reserved.

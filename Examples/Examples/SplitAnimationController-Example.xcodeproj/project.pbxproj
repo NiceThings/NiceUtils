@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52863751D4D4F6200CE87B1 /* NiceUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52863721D4D4F5500CE87B1 /* NiceUtils.framework */; };
+		B52863761D4D4F6200CE87B1 /* NiceUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52863721D4D4F5500CE87B1 /* NiceUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5F88BA81C19FA0C00D10000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F88BA71C19FA0C00D10000 /* AppDelegate.swift */; };
 		B5F88BAA1C19FA0C00D10000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F88BA91C19FA0C00D10000 /* ViewController.swift */; };
 		B5F88BAF1C19FA0C00D10000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F88BAE1C19FA0C00D10000 /* Assets.xcassets */; };
@@ -15,37 +17,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5F88BBE1C19FA2D00D10000 /* PBXContainerItemProxy */ = {
+		B52863711D4D4F5500CE87B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B5F88BB91C19FA2D00D10000 /* MattUtils.xcodeproj */;
+			containerPortal = B528636C1D4D4F5500CE87B1 /* NiceUtils.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B5EDEEF21BCB00B200FACF9F;
-			remoteInfo = MattUtils;
+			remoteInfo = NiceUtils;
 		};
-		B5F88BC01C19FA2D00D10000 /* PBXContainerItemProxy */ = {
+		B52863731D4D4F5500CE87B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B5F88BB91C19FA2D00D10000 /* MattUtils.xcodeproj */;
+			containerPortal = B528636C1D4D4F5500CE87B1 /* NiceUtils.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B5EDEEFC1BCB00B200FACF9F;
-			remoteInfo = MattUtilsTests;
+			remoteInfo = NiceUtilsTests;
 		};
-		B5F88BC21C19FA7200D10000 /* PBXContainerItemProxy */ = {
+		B52863771D4D4F6300CE87B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B5F88BB91C19FA2D00D10000 /* MattUtils.xcodeproj */;
+			containerPortal = B528636C1D4D4F5500CE87B1 /* NiceUtils.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = B5EDEEF11BCB00B200FACF9F;
-			remoteInfo = MattUtils;
+			remoteInfo = NiceUtils;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B528636B1D4D4F3C00CE87B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B52863761D4D4F6200CE87B1 /* NiceUtils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B528636C1D4D4F5500CE87B1 /* NiceUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NiceUtils.xcodeproj; path = ../../Source/NiceUtils.xcodeproj; sourceTree = "<group>"; };
 		B5F88BA41C19FA0C00D10000 /* SplitAnimationController-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SplitAnimationController-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F88BA71C19FA0C00D10000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F88BA91C19FA0C00D10000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5F88BAE1C19FA0C00D10000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F88BB11C19FA0C00D10000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F88BB31C19FA0C00D10000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5F88BB91C19FA2D00D10000 /* MattUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MattUtils.xcodeproj; path = ../../Source/MattUtils.xcodeproj; sourceTree = "<group>"; };
 		B5F88BC41C19FA8500D10000 /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,16 +70,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52863751D4D4F6200CE87B1 /* NiceUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B528636D1D4D4F5500CE87B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B52863721D4D4F5500CE87B1 /* NiceUtils.framework */,
+				B52863741D4D4F5500CE87B1 /* NiceUtils.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B5F88B9B1C19FA0C00D10000 = {
 			isa = PBXGroup;
 			children = (
-				B5F88BB91C19FA2D00D10000 /* MattUtils.xcodeproj */,
+				B528636C1D4D4F5500CE87B1 /* NiceUtils.xcodeproj */,
 				B5F88BA61C19FA0C00D10000 /* SplitAnimationController-Example */,
 				B5F88BA51C19FA0C00D10000 /* Products */,
 			);
@@ -90,15 +116,6 @@
 			path = "SplitAnimationController-Example";
 			sourceTree = "<group>";
 		};
-		B5F88BBA1C19FA2D00D10000 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B5F88BBF1C19FA2D00D10000 /* MattUtils.framework */,
-				B5F88BC11C19FA2D00D10000 /* MattUtilsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,11 +126,12 @@
 				B5F88BA01C19FA0C00D10000 /* Sources */,
 				B5F88BA11C19FA0C00D10000 /* Frameworks */,
 				B5F88BA21C19FA0C00D10000 /* Resources */,
+				B528636B1D4D4F3C00CE87B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B5F88BC31C19FA7200D10000 /* PBXTargetDependency */,
+				B52863781D4D4F6300CE87B1 /* PBXTargetDependency */,
 			);
 			name = "SplitAnimationController-Example";
 			productName = "SplitAnimationController-Example";
@@ -148,8 +166,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B5F88BBA1C19FA2D00D10000 /* Products */;
-					ProjectRef = B5F88BB91C19FA2D00D10000 /* MattUtils.xcodeproj */;
+					ProductGroup = B528636D1D4D4F5500CE87B1 /* Products */;
+					ProjectRef = B528636C1D4D4F5500CE87B1 /* NiceUtils.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -160,18 +178,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B5F88BBF1C19FA2D00D10000 /* MattUtils.framework */ = {
+		B52863721D4D4F5500CE87B1 /* NiceUtils.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = MattUtils.framework;
-			remoteRef = B5F88BBE1C19FA2D00D10000 /* PBXContainerItemProxy */;
+			path = NiceUtils.framework;
+			remoteRef = B52863711D4D4F5500CE87B1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B5F88BC11C19FA2D00D10000 /* MattUtilsTests.xctest */ = {
+		B52863741D4D4F5500CE87B1 /* NiceUtils.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = MattUtilsTests.xctest;
-			remoteRef = B5F88BC01C19FA2D00D10000 /* PBXContainerItemProxy */;
+			path = NiceUtils.xctest;
+			remoteRef = B52863731D4D4F5500CE87B1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -202,10 +220,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B5F88BC31C19FA7200D10000 /* PBXTargetDependency */ = {
+		B52863781D4D4F6300CE87B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MattUtils;
-			targetProxy = B5F88BC21C19FA7200D10000 /* PBXContainerItemProxy */;
+			name = NiceUtils;
+			targetProxy = B52863771D4D4F6300CE87B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -306,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "SplitAnimationController-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbuckley.SplitAnimationController-Example";
@@ -317,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "SplitAnimationController-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbuckley.SplitAnimationController-Example";
@@ -343,6 +363,7 @@
 				B5F88BB81C19FA0C00D10000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

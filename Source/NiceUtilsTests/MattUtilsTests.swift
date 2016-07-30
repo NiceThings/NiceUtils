@@ -1,15 +1,15 @@
 //
-//  MattUtilsTests.swift
-//  MattUtilsTests
+//  NiceUtilsTests.swift
+//  NiceUtilsTests
 //
 //  Created by Matthew Buckley on 10/11/15.
 //  Copyright © 2015 Matt Buckley. All rights reserved.
 //
 
 import XCTest
-@testable import MattUtils
+@testable import NiceUtils
 
-class MattUtilsTests: XCTestCase {
+class NiceUtilsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B53111B11C15C83D00E0CACD /* SplitTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53111B01C15C83D00E0CACD /* SplitTransition.swift */; };
-		B536E0E91BD9D3A30096C3E7 /* UIImage+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */; };
-		B539F27A1BDC355F003C2E20 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539F2791BDC355F003C2E20 /* HairlineView.swift */; };
-		B57B6B251BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */; };
-		B5EDEEF61BCB00B200FACF9F /* MattUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B5EDEEF51BCB00B200FACF9F /* MattUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5EDEEFD1BCB00B200FACF9F /* MattUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */; };
+		B52863571D4D4B6200CE87B1 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52863511D4D4B6200CE87B1 /* HairlineView.swift */; };
+		B52863581D4D4B6300CE87B1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B52863521D4D4B6200CE87B1 /* Info.plist */; };
+		B52863591D4D4B6300CE87B1 /* NiceUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B52863531D4D4B6200CE87B1 /* NiceUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B528635A1D4D4B6300CE87B1 /* SplitTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52863541D4D4B6200CE87B1 /* SplitTransition.swift */; };
+		B528635B1D4D4B6300CE87B1 /* UIImage+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52863551D4D4B6200CE87B1 /* UIImage+Blend.swift */; };
+		B528635C1D4D4B6300CE87B1 /* UIWindow+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52863561D4D4B6200CE87B1 /* UIWindow+Screenshot.swift */; };
+		B5EDEEFD1BCB00B200FACF9F /* NiceUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EDEEF21BCB00B200FACF9F /* NiceUtils.framework */; };
 		B5EDEF021BCB00B200FACF9F /* MattUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDEF011BCB00B200FACF9F /* MattUtilsTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,14 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B53111B01C15C83D00E0CACD /* SplitTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitTransition.swift; sourceTree = "<group>"; };
-		B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blend.swift"; sourceTree = "<group>"; };
-		B539F2791BDC355F003C2E20 /* HairlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
-		B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Screenshot.swift"; sourceTree = "<group>"; };
-		B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MattUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5EDEEF51BCB00B200FACF9F /* MattUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MattUtils.h; sourceTree = "<group>"; };
-		B5EDEEF71BCB00B200FACF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5EDEEFC1BCB00B200FACF9F /* MattUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MattUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52863511D4D4B6200CE87B1 /* HairlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HairlineView.swift; path = NiceUtils/HairlineView.swift; sourceTree = SOURCE_ROOT; };
+		B52863521D4D4B6200CE87B1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NiceUtils/Info.plist; sourceTree = SOURCE_ROOT; };
+		B52863531D4D4B6200CE87B1 /* NiceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NiceUtils.h; path = NiceUtils/NiceUtils.h; sourceTree = SOURCE_ROOT; };
+		B52863541D4D4B6200CE87B1 /* SplitTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitTransition.swift; path = NiceUtils/SplitTransition.swift; sourceTree = SOURCE_ROOT; };
+		B52863551D4D4B6200CE87B1 /* UIImage+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Blend.swift"; path = "NiceUtils/UIImage+Blend.swift"; sourceTree = SOURCE_ROOT; };
+		B52863561D4D4B6200CE87B1 /* UIWindow+Screenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIWindow+Screenshot.swift"; path = "NiceUtils/UIWindow+Screenshot.swift"; sourceTree = SOURCE_ROOT; };
+		B5EDEEF21BCB00B200FACF9F /* NiceUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NiceUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EDEEFC1BCB00B200FACF9F /* NiceUtils.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiceUtils.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EDEF011BCB00B200FACF9F /* MattUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MattUtilsTests.swift; sourceTree = "<group>"; };
 		B5EDEF031BCB00B200FACF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EDEEFD1BCB00B200FACF9F /* MattUtils.framework in Frameworks */,
+				B5EDEEFD1BCB00B200FACF9F /* NiceUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +62,8 @@
 		B539F2781BDC354E003C2E20 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B539F2791BDC355F003C2E20 /* HairlineView.swift */,
-				B53111B01C15C83D00E0CACD /* SplitTransition.swift */,
+				B52863511D4D4B6200CE87B1 /* HairlineView.swift */,
+				B52863541D4D4B6200CE87B1 /* SplitTransition.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -70,8 +71,8 @@
 		B57B6B231BD7B7CA00BB1F6A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B57B6B241BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift */,
-				B536E0E81BD9D3A30096C3E7 /* UIImage+Blend.swift */,
+				B52863551D4D4B6200CE87B1 /* UIImage+Blend.swift */,
+				B52863561D4D4B6200CE87B1 /* UIWindow+Screenshot.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -79,8 +80,10 @@
 		B5EDEEE81BCB00B200FACF9F = {
 			isa = PBXGroup;
 			children = (
-				B5EDEEF41BCB00B200FACF9F /* MattUtils */,
-				B5EDEF001BCB00B200FACF9F /* MattUtilsTests */,
+				B5EDEEF41BCB00B200FACF9F /* NiceUtils */,
+				B52863531D4D4B6200CE87B1 /* NiceUtils.h */,
+				B52863521D4D4B6200CE87B1 /* Info.plist */,
+				B5EDEF001BCB00B200FACF9F /* NiceUtilsTests */,
 				B5EDEEF31BCB00B200FACF9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,29 +91,29 @@
 		B5EDEEF31BCB00B200FACF9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */,
-				B5EDEEFC1BCB00B200FACF9F /* MattUtilsTests.xctest */,
+				B5EDEEF21BCB00B200FACF9F /* NiceUtils.framework */,
+				B5EDEEFC1BCB00B200FACF9F /* NiceUtils.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5EDEEF41BCB00B200FACF9F /* MattUtils */ = {
+		B5EDEEF41BCB00B200FACF9F /* NiceUtils */ = {
 			isa = PBXGroup;
 			children = (
 				B539F2781BDC354E003C2E20 /* Classes */,
 				B57B6B231BD7B7CA00BB1F6A /* Extensions */,
-				B5EDEEF51BCB00B200FACF9F /* MattUtils.h */,
-				B5EDEEF71BCB00B200FACF9F /* Info.plist */,
 			);
+			name = NiceUtils;
 			path = MattUtils;
 			sourceTree = "<group>";
 		};
-		B5EDEF001BCB00B200FACF9F /* MattUtilsTests */ = {
+		B5EDEF001BCB00B200FACF9F /* NiceUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
 				B5EDEF011BCB00B200FACF9F /* MattUtilsTests.swift */,
 				B5EDEF031BCB00B200FACF9F /* Info.plist */,
 			);
+			name = NiceUtilsTests;
 			path = MattUtilsTests;
 			sourceTree = "<group>";
 		};
@@ -121,16 +124,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EDEEF61BCB00B200FACF9F /* MattUtils.h in Headers */,
+				B52863591D4D4B6300CE87B1 /* NiceUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B5EDEEF11BCB00B200FACF9F /* MattUtils */ = {
+		B5EDEEF11BCB00B200FACF9F /* NiceUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5EDEF061BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "MattUtils" */;
+			buildConfigurationList = B5EDEF061BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "NiceUtils" */;
 			buildPhases = (
 				B5EDEEED1BCB00B200FACF9F /* Sources */,
 				B5EDEEEE1BCB00B200FACF9F /* Frameworks */,
@@ -141,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = MattUtils;
+			name = NiceUtils;
 			productName = MattUtils;
-			productReference = B5EDEEF21BCB00B200FACF9F /* MattUtils.framework */;
+			productReference = B5EDEEF21BCB00B200FACF9F /* NiceUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B5EDEEFB1BCB00B200FACF9F /* MattUtilsTests */ = {
+		B5EDEEFB1BCB00B200FACF9F /* NiceUtilsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5EDEF091BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "MattUtilsTests" */;
+			buildConfigurationList = B5EDEF091BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "NiceUtilsTests" */;
 			buildPhases = (
 				B5EDEEF81BCB00B200FACF9F /* Sources */,
 				B5EDEEF91BCB00B200FACF9F /* Frameworks */,
@@ -159,9 +162,9 @@
 			dependencies = (
 				B5EDEEFF1BCB00B200FACF9F /* PBXTargetDependency */,
 			);
-			name = MattUtilsTests;
+			name = NiceUtilsTests;
 			productName = MattUtilsTests;
-			productReference = B5EDEEFC1BCB00B200FACF9F /* MattUtilsTests.xctest */;
+			productReference = B5EDEEFC1BCB00B200FACF9F /* NiceUtils.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5EDEEEC1BCB00B200FACF9F /* Build configuration list for PBXProject "MattUtils" */;
+			buildConfigurationList = B5EDEEEC1BCB00B200FACF9F /* Build configuration list for PBXProject "NiceUtils" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -194,8 +197,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5EDEEF11BCB00B200FACF9F /* MattUtils */,
-				B5EDEEFB1BCB00B200FACF9F /* MattUtilsTests */,
+				B5EDEEF11BCB00B200FACF9F /* NiceUtils */,
+				B5EDEEFB1BCB00B200FACF9F /* NiceUtilsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52863581D4D4B6300CE87B1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57B6B251BD7B9EB00BB1F6A /* UIWindow+Screenshot.swift in Sources */,
-				B53111B11C15C83D00E0CACD /* SplitTransition.swift in Sources */,
-				B536E0E91BD9D3A30096C3E7 /* UIImage+Blend.swift in Sources */,
-				B539F27A1BDC355F003C2E20 /* HairlineView.swift in Sources */,
+				B528635C1D4D4B6300CE87B1 /* UIWindow+Screenshot.swift in Sources */,
+				B52863571D4D4B6200CE87B1 /* HairlineView.swift in Sources */,
+				B528635A1D4D4B6300CE87B1 /* SplitTransition.swift in Sources */,
+				B528635B1D4D4B6300CE87B1 /* UIImage+Blend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +246,7 @@
 /* Begin PBXTargetDependency section */
 		B5EDEEFF1BCB00B200FACF9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5EDEEF11BCB00B200FACF9F /* MattUtils */;
+			target = B5EDEEF11BCB00B200FACF9F /* NiceUtils */;
 			targetProxy = B5EDEEFE1BCB00B200FACF9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,11 +349,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MattUtils/Info.plist;
+				INFOPLIST_FILE = NiceUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattbuckley.MattUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.niceThings.niceUtils;
+				PRODUCT_NAME = NiceUtils;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -363,11 +367,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MattUtils/Info.plist;
+				INFOPLIST_FILE = NiceUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mattbuckley.MattUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.niceThings.niceUtils;
+				PRODUCT_NAME = NiceUtils;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -378,7 +382,7 @@
 				INFOPLIST_FILE = MattUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattbuckley.MattUtilsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NiceUtils;
 			};
 			name = Debug;
 		};
@@ -388,14 +392,14 @@
 				INFOPLIST_FILE = MattUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattbuckley.MattUtilsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NiceUtils;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5EDEEEC1BCB00B200FACF9F /* Build configuration list for PBXProject "MattUtils" */ = {
+		B5EDEEEC1BCB00B200FACF9F /* Build configuration list for PBXProject "NiceUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5EDEF041BCB00B200FACF9F /* Debug */,
@@ -404,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5EDEF061BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "MattUtils" */ = {
+		B5EDEF061BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "NiceUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5EDEF071BCB00B200FACF9F /* Debug */,
@@ -413,7 +417,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5EDEF091BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "MattUtilsTests" */ = {
+		B5EDEF091BCB00B200FACF9F /* Build configuration list for PBXNativeTarget "NiceUtilsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5EDEF0A1BCB00B200FACF9F /* Debug */,

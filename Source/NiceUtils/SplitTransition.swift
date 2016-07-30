@@ -1,6 +1,6 @@
 //
 //  SplitTransition.swift
-//  MattUtils
+//  NiceUtils
 //
 //  Created by Matthew Buckley on 12/7/15.
 //  Copyright © 2015 Matt Buckley. All rights reserved.

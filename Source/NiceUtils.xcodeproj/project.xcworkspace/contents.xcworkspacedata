@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MattUtils.xcodeproj">
+      location = "self:/Users/matthewbuckley/Projects/MattUtils/Source/NiceUtils.xcodeproj">
    </FileRef>
 </Workspace>

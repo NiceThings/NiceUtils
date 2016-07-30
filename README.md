@@ -1,7 +1,7 @@
-# MattUtils
+# NiceUtils
 My favorite tools
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/mattthousand/mattutils)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/mattthousand/NiceUtils)
 
 ## Installation with Carthage
 
@@ -14,9 +14,9 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate MattUtils into your Xcode project using Carthage, specify it in your Cartfile:
+To integrate NiceUtils into your Xcode project using Carthage, specify it in your Cartfile:
 
-`github "mattthousand/MattUtils"`
+`github "nicethings/niceutils"`
 
 ## Installation with CocoaPods
 
@@ -24,7 +24,7 @@ To integrate MattUtils into your Xcode project using Carthage, specify it in you
 
 ## Usage
 
-First, make sure you import the MattUtils module: `import MattUtils`.
+First, make sure you import the NiceUtils module: `import NiceUtils`.
 
 The rest is easy. If you are pushing a view controller to the navigation stack, follow these three steps:
 
@@ -72,7 +72,7 @@ extension ViewController: UINavigationControllerDelegate {
 
 <p align="center" >
 <br/>
-<img src="https://raw.github.com/mattthousand/mattutils/master/SplitTransition.gif" alt="Overview" />
+<img src="https://raw.github.com/mattthousand/NiceUtils/master/SplitTransition.gif" alt="Overview" />
 <br/>
 </p>
 
